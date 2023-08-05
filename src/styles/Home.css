@@ -1,0 +1,39 @@
+body{
+    background-color: #f6f2e9;
+}
+.all-content{
+    display: flex;
+    height: 90%;
+    width: 100%;
+    background-color: yellow;
+    position: fixed;
+}
+
+.options{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 80%;
+    position: absolute;
+}
+
+.welcome-message{
+    background-color: green;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+.welcome{
+    width: 700px;
+    height: 300px;
+}
+
+.monkey{
+    width:500px;
+    height: 350px;
+}
