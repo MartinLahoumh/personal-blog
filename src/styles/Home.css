@@ -3,37 +3,61 @@ body{
 }
 .all-content{
     display: flex;
-    height: 90%;
+    height: 100%;
     width: 100%;
+    
     /*background-color: yellow;*/
-    position: fixed;
 }
 
-.options{
-    /*background-color: blue;*/
+.icon{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    height: 80%;
-    position: absolute;
+    /*background-color: aqua;*/
 }
+.icon-img{
+    width:120%;
+    height:120%;
+    /*background-color: red;*/
+}
+.options{
+    /*background-color: blue;*/
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 160px;
+    margin-left: 50px;
+    z-index: 1;
+    border-style: solid;
+}
+
+.section{
+    /*background-color: green;*/
+    position: absolute;
+} 
 
 .welcome-message{
     /*background-color: green;*/
-    width: 100%;
+    width: 80%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 100px;
+    margin-top: 74px;
+    border-style: solid;
 }
 .welcome{
-    width: 700px;
-    height: 300px;
+    /*width: 700px;
+    margin-bottom: 110px;*/
+    width: 60%
 }
 
 .monkey{
-    width:500px;
-    height: 350px;
+    /*width:500px;
+    height: 350px;*/
+    width: 40%;
 }
