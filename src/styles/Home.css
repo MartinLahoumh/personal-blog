@@ -5,12 +5,12 @@ body{
     display: flex;
     height: 90%;
     width: 100%;
-    background-color: yellow;
+    /*background-color: yellow;*/
     position: fixed;
 }
 
 .options{
-    background-color: blue;
+    /*background-color: blue;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +20,7 @@ body{
 }
 
 .welcome-message{
-    background-color: green;
+    /*background-color: green;*/
     width: 100%;
     display: flex;
     flex-direction: column;
