@@ -8,9 +8,7 @@
   border-bottom-color: black;
   border-bottom-width: 5px;
   position: fixed;
-  z-index: 1000;
 }
-
 .name{
   margin-left: 20px;
 }
