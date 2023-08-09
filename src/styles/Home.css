@@ -44,7 +44,6 @@ body{
     margin-left: 50px;
     z-index: 1;
     border-style: solid;*/
-    background-color: aqua;
     width: 150px;
     height: auto;
     display: flex;
@@ -72,13 +71,10 @@ body{
     /*width: 700px;
     margin-bottom: 110px;*/
     width: 60%;
-    margin-bottom: 100px;
 }
 
 .monkey{
     /*width:500px;
     height: 350px;*/
     width: 40%;
-    margin-bottom: 0px;
-    margin-top: 0px;
 }
