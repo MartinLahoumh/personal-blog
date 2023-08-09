@@ -3,6 +3,7 @@ import monkey from '../images/Monkey.gif';
 import about_me from '../images/about-me.png';
 import experience from '../images/experience.png';
 import art_animations from '../images/art-animations.png';
+import projects from '../images/projects.png';
 import '../styles/Home.css';
 /*
 <div className='all-content'>
@@ -43,7 +44,7 @@ function Home() {
                     <p className='section'>Experience.</p>
                 </div>
                 <div className='icon'>
-                    <img className='icon-img' src={experience} />
+                    <img id = 'projects' src={projects} />
                     <p className='section'>Projects.</p>
                 </div>
                 <div className='icon'>
