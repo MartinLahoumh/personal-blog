@@ -3,7 +3,7 @@ import monkey from '../images/Monkey.gif';
 import about_me from '../images/about-me.png';
 import experience from '../images/experience.png';
 import art_animations from '../images/art-animations.png';
-import cardboard from '../images/cardboard.jpg';
+import yoshi from '../images/yoshi.png';
 import projects from '../images/projects.png';
 import '../styles/Home.css';
 
@@ -11,7 +11,7 @@ function Home() {
   return (
     <>
         <body>
-        
+        <img className='background' src={yoshi} />
         <div className='all-content'>
                 <div className='options'>
                     <div className='icon'>
