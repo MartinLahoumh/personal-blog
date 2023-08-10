@@ -5,6 +5,10 @@ import experience from '../images/experience.png';
 import art_animations from '../images/art-animations.png';
 import yoshi from '../images/yoshi.png';
 import projects from '../images/projects.png';
+import blue from '../images/blue.png';
+import red from '../images/red.png';
+import green from '../images/green.png';
+import yellow from '../images/yellow.png';
 import '../styles/Home.css';
 
 function Home() {
@@ -16,17 +20,21 @@ function Home() {
                 <div className='options'>
                     <div className='icon'>
                         <img className='icon-img'src={about_me} />
+                        <img className='icon-highlight' src={yellow} />
                         <h2 className='section-name'>About Me.</h2>
                     </div>
                     <div className='icon'>
+                        <img className='icon-highlight' src={red} />
                         <img className='icon-img' src={experience} />
                         <h2 className='section-name'>Experience.</h2>
                     </div>
                     <div className='icon'>
+                        <img className='icon-highlight' src={green} />
                         <img id = 'projects' src={projects} />
                         <h2 className='section-name'>Projects.</h2>
                     </div>
                     <div className='icon'>
+                        <img className='icon-highlight' src={blue} />
                         <img className='icon-img' src={art_animations} />
                         <h2 className='section-name'>Art/Animations.</h2>
                     </div>

@@ -12,7 +12,7 @@ body{
     width: 100%;
     height: 100%;
     opacity: 0.2;
-    position: absolute;
+    position: fixed;
     margin-top: 74px;
 }
 .all-content{
@@ -33,6 +33,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     
 }
 .icon-img{
@@ -40,11 +41,20 @@ body{
     height:100%;*/
     width: 100%;
     height: 100%;
-    
+    z-index: 2;
+}
+
+.icon-highlight{
+    width: 110%;
+    height: 20%;
+    position: absolute;
+    z-index: 1;
+    top: 45%;
 }
 #projects{
     width: 82%;
     height: 82%;
+    z-index: 2;
 }
 .options{
     /*background-color: blue;
@@ -71,7 +81,7 @@ body{
 .section-name{
     font-family: gooddp;
     font-size: 200%;
-   
+    
 } 
 
 .welcome-message{
