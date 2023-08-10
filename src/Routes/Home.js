@@ -20,16 +20,16 @@ function Home() {
                 <div className='options'>
                     <div className='icon'>
                         <img className='icon-img'src={about_me} />
-                        <img className='icon-highlight' src={yellow} />
+                        <img className='icon-highlight' src={red} />
                         <h2 className='section-name'>About Me.</h2>
                     </div>
                     <div className='icon'>
-                        <img className='icon-highlight' src={red} />
+                        <img className='icon-highlight' src={green} />
                         <img className='icon-img' src={experience} />
                         <h2 className='section-name'>Experience.</h2>
                     </div>
                     <div className='icon'>
-                        <img className='icon-highlight' src={green} />
+                        <img className='icon-highlight' src={yellow} />
                         <img id = 'projects' src={projects} />
                         <h2 className='section-name'>Projects.</h2>
                     </div>
