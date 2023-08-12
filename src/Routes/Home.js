@@ -4,6 +4,11 @@ import about_me from '../images/about-me.png';
 import experience from '../images/experience.png';
 import art_animations from '../images/art-animations.png';
 import yoshi from '../images/yoshi.png';
+import dk1 from '../images/dk1.png';
+import dk2 from '../images/dk2.png';
+import ground from '../images/ground.jpg';
+import flower from '../images/flower.webp';
+import pikmin from '../images/pikmin.webp';
 import projects from '../images/projects.png';
 import blue from '../images/blue.png';
 import red from '../images/red.png';
@@ -14,7 +19,7 @@ import '../styles/Home.css';
 function Home() {
   return (
     <>
-        <body>
+        <div className='body'>
         <img className='background' src={yoshi} />
         <div className='all-content'>
                 <div className='options'>
@@ -44,7 +49,7 @@ function Home() {
                     <img className='monkey' src={monkey} />
                 </div>
             </div>
-        </body>
+        </div>
     </>
   );
 }
