@@ -1,9 +1,11 @@
 import './styles/App.css';
 import logo from './images/martin-logo.png';
 import Home from './Routes/Home';
+import Experience from './Routes/Experience';
 import Ravaged_Rustworks from './music/Ravaged_Rustworks.mp3';
 import Pikmin_Title_Screen from './music/Pikmin_Title_Screen.mp3';
 import { useEffect, useState } from 'react';
+import ReactDOM from 'react-dom';
 /*
 <div className = "diff">
           <p className = "sec">About Me</p>
@@ -82,20 +84,37 @@ function App() {
     const time = document.getElementById('time');
     time.innerHTML = secToMin(audio.currentTime) + "/" + secToMin(audio.duration);
   }
+
+  const pageRoute = (event)=>{
+    if(event.target.id == 'Home'){
+      const container = document.getElementById('page');
+      container.innerHTML = '';
+      const root = ReactDOM.createRoot(container);
+      root.render(<Home />);
+    }
+    else if(event.target.id == 'Experience'){
+      const container = document.getElementById('page');
+      container.innerHTML = '';
+      const root = ReactDOM.createRoot(container);
+      root.render(<Experience/>);
+    }
+  }
   return (
     <>
       <div className="header">
-        <img className = 'name' src={logo}/>
+        <img id='Home' onClick={pageRoute} className = 'name' src={logo}/>
         <div className = "diff">
           <p className = "sec">About Me</p>
-          <p className = "sec">Experience</p>
+          <p id='Experience' className = "sec" onClick={pageRoute}>Experience</p>
           <p className = "sec">Personal Projects</p>
           <p className = "sec">Art/Animations</p>
         </div>
       </div>
-      <Home />
+      <div id='page'>
+        <Home />
+      </div>
       <div className='media-player-container'>
-        <div className='media-player'>
+        <div className='media-player'> 
           <audio id='audio' src={musicList[0]}onTimeUpdate={audioTimeUpdate}>
           </audio>
           <button id='play-icon' className='play-icon' onClick={handlePlay}>Play</button>

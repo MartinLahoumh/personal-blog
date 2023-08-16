@@ -43,6 +43,7 @@
 }
 .name{
   margin-left: 20px;
+  cursor: pointer;
 }
 
 .diff,.media-player{
@@ -65,9 +66,16 @@
   z-index: 100000;
 }
 .sec{
+  color: black;
   font-family: gooddp;
   font-size: 215%;
-  
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.sec:hover{
+  color: rgb(246, 121, 107);
+  transition: color 0.2s;
 }
 
 .App-logo {

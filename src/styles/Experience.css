@@ -1,0 +1,45 @@
+.heading{
+    margin-bottom: 70px;
+}
+.card-section{
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 50vh;
+}
+
+.pop-up-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    top: 120px;
+}
+
+.resume-section{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0px;
+    left:-70px;
+    margin: 74px;
+    width: 8%;
+}
+.resume-name{
+    font-family: gooddp;
+    font-size: 180%;
+    margin: 0;
+}
+
+.resume-img{
+    width: 80%;
+    height: auto;
+}

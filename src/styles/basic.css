@@ -1,0 +1,15 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.heading{
+    margin-top: 74px;
+    width: 40%;
+    z-index: 1;
+    margin-bottom: 40px;
+}
