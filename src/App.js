@@ -2,6 +2,7 @@ import './styles/App.css';
 import logo from './images/martin-logo.png';
 import Home from './Routes/Home';
 import Experience from './Routes/Experience';
+import AboutMe from './Routes/AboutMe';
 import Ravaged_Rustworks from './music/Ravaged_Rustworks.mp3';
 import Pikmin_Title_Screen from './music/Pikmin_Title_Screen.mp3';
 import { useEffect, useState } from 'react';
@@ -13,9 +14,15 @@ import ReactDOM from 'react-dom';
           <p className = "sec">Personal Projects</p>
           <p className = "sec">Art/Animations</p>
         </div>*/
+
+
 function App() {
   let [play,setPlay] = useState(false);
-  let [musicList, setMusicList] = useState([Ravaged_Rustworks,Pikmin_Title_Screen]);
+  //let [musicList, setMusicList] = useState([Ravaged_Rustworks,Pikmin_Title_Screen]);
+  let [musicList, setMusicList] = useState({
+    '0':[Ravaged_Rustworks, 'Ravaged Rustworks'],
+    '1': [Pikmin_Title_Screen, 'Pikmin Title Screen']
+  });
   let [selectedSong, setSong] = useState(0);
   const handlePlay = ()=>{
     const audio = document.getElementById('audio');
@@ -36,7 +43,7 @@ function App() {
     if(event.target.id == 'prev-song'){
       if(audio.currentTime < 3){
         if(selectedSong == 0){
-          setSong(musicList.length -1);
+          setSong(Object.keys(musicList).length -1);
         }
         else{
           setSong(selectedSong - 1);
@@ -44,14 +51,15 @@ function App() {
       }
     }
     else{
-      if(selectedSong == musicList.length - 1){
+      if(selectedSong == Object.keys(musicList).length - 1){
         setSong(0);
       }
       else{
         setSong(selectedSong + 1);
       }
     }
-    audio.src = musicList[selectedSong];
+    audio.src = musicList[selectedSong][0];
+    document.getElementById('song-name').innerText = musicList[selectedSong][1];
     audio.currentTime = 0;
     audio.load();
     audio.play();
@@ -98,13 +106,19 @@ function App() {
       const root = ReactDOM.createRoot(container);
       root.render(<Experience/>);
     }
+    else if(event.target.id == 'About-Me'){
+      const container = document.getElementById('page');
+      container.innerHTML = '';
+      const root = ReactDOM.createRoot(container);
+      root.render(<AboutMe/>);
+    }
   }
   return (
     <>
       <div className="header">
         <img id='Home' onClick={pageRoute} className = 'name' src={logo}/>
         <div className = "diff">
-          <p className = "sec">About Me</p>
+          <p id='About-Me' className = "sec" onClick={pageRoute}>About Me</p>
           <p id='Experience' className = "sec" onClick={pageRoute}>Experience</p>
           <p className = "sec">Personal Projects</p>
           <p className = "sec">Art/Animations</p>
@@ -115,15 +129,19 @@ function App() {
       </div>
       <div className='media-player-container'>
         <div className='media-player'> 
-          <audio id='audio' src={musicList[0]}onTimeUpdate={audioTimeUpdate}>
+          <audio id='audio' src={musicList[0][0]}onTimeUpdate={audioTimeUpdate}>
           </audio>
+          <p id='song-name' className='song-name'>Ravaged Rustworks</p>
           <button id='play-icon' className='play-icon' onClick={handlePlay}>Play</button>
-          <div id='time'>0:00</div>
-          <button id='prev-song' onClick={handleSongSelection}>Prev-Song</button>
-          <input type='range' id='song-slider' max='100' defaultValue='0'></input>
-          <button id='next-song'>Next Song</button>
-          <button id='mute'>Mute</button>
-          <input type='range' id='volume-slider' max='100' defaultValue='15'></input>
+          <div className='song-selection'>
+            <button id='prev-song' className='prev-song'onClick={handleSongSelection}>Prev</button>
+            <div id='time' className='time'>0:00/3:29</div>
+            <button id='next-song' className='next-song' onClick={handleSongSelection}>Next</button>
+          </div>
+          <div className='volume-control'>
+            <button id='mute' className='mute'>Mute</button>
+            <input type='range' id='volume-slider' max='100' defaultValue='15' step='5'></input>
+          </div>
         </div>
       </div>
     </>

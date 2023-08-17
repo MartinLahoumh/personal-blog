@@ -1,3 +1,8 @@
+@font-face{
+    font-family: 'Ubuntu';
+    src: url('../fonts/static/Ubuntu-Medium.ttf');
+}
+
 .content{
     display: flex;
     flex-direction: column;
