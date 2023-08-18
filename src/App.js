@@ -28,7 +28,8 @@ function App() {
     '2': [Creative_Exercise, 'Creative Exercise - Mario Paint'],
     '3': [Select_Area, 'Select Area (Sector 4)'],
   });
-  let [selectedSong, setSong] = useState(0);
+  let selectedSong = 0;
+
   const handlePlay = ()=>{
     const audio = document.getElementById('audio');
     if(!play){
@@ -44,31 +45,37 @@ function App() {
   }
 
   const handleSongSelection = (event)=>{
+    console.log(selectedSong);
     const audio = document.getElementById('audio');
     if(event.target.id == 'prev-song'){
       if(audio.currentTime < 3){
         if(selectedSong == 0){
-          setSong(Object.keys(musicList).length -1);
+          console.log("HERE");
+          selectedSong = Object.keys(musicList).length -1;
         }
         else{
-          setSong(selectedSong - 1);
+          console.log("NOT");
+          selectedSong = selectedSong - 1;
         }
       }
     }
     else{
       if(selectedSong == Object.keys(musicList).length - 1){
-        setSong(0);
+        selectedSong = 0;
       }
       else{
-        setSong(selectedSong + 1);
+        selectedSong = selectedSong + 1;
       }
     }
+    console.log("SELECTED: ", selectedSong);
     audio.src = musicList[selectedSong][0];
     document.getElementById('song-name').innerText = musicList[selectedSong][1];
     audio.currentTime = 0;
+    audio.pause();
     audio.load();
     audio.play();
   }
+  
   function secToMin(time){
     let minute = 0;
     let second = 0;
@@ -140,7 +147,7 @@ function App() {
       </div>
       <div className='media-player-container'>
         <div className='media-player'> 
-          <audio id='audio' src={musicList[0][0]}onTimeUpdate={audioTimeUpdate}>
+          <audio id='audio' src={musicList[selectedSong][0]} onTimeUpdate={audioTimeUpdate}>
           </audio>
           <p id='song-name' className='song-name'>Ravaged Rustworks</p>
           <button id='play-icon' className='play-icon' onClick={handlePlay}>Play</button>

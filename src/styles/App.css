@@ -50,7 +50,7 @@
   cursor: pointer;
 }
 
-.diff,.media-player{
+.diff{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -90,7 +90,6 @@
   font-family: Ubuntu;
   background-color: #fa7a76;
   box-shadow: 3px -3px black;
-  font-family: Ubuntu;
   cursor: pointer;
 }
 

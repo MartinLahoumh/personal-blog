@@ -12,6 +12,10 @@
     height: auto;
 }
 
+.body{
+    height: 100vh;
+}
+
 .heading{
     margin-top: 74px;
     width: 40%;
