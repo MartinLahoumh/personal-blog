@@ -90,6 +90,8 @@
   font-family: Ubuntu;
   background-color: #fa7a76;
   box-shadow: 3px -3px black;
+  font-family: Ubuntu;
+  cursor: pointer;
 }
 
 .prev-song{

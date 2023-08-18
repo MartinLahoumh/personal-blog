@@ -3,8 +3,11 @@ import logo from './images/martin-logo.png';
 import Home from './Routes/Home';
 import Experience from './Routes/Experience';
 import AboutMe from './Routes/AboutMe';
+import Projects from './Routes/Projects';
 import Ravaged_Rustworks from './music/Ravaged_Rustworks.mp3';
 import Pikmin_Title_Screen from './music/Pikmin_Title_Screen.mp3';
+import Creative_Exercise from './music/Creative_Exercise.mp3';
+import Select_Area from './music/Select_Area_Selector_4.mp3';
 import { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 /*
@@ -21,7 +24,9 @@ function App() {
   //let [musicList, setMusicList] = useState([Ravaged_Rustworks,Pikmin_Title_Screen]);
   let [musicList, setMusicList] = useState({
     '0':[Ravaged_Rustworks, 'Ravaged Rustworks'],
-    '1': [Pikmin_Title_Screen, 'Pikmin Title Screen']
+    '1': [Pikmin_Title_Screen, 'Pikmin Title Screen - Pikmin'],
+    '2': [Creative_Exercise, 'Creative Exercise - Mario Paint'],
+    '3': [Select_Area, 'Select Area (Sector 4)'],
   });
   let [selectedSong, setSong] = useState(0);
   const handlePlay = ()=>{
@@ -112,6 +117,12 @@ function App() {
       const root = ReactDOM.createRoot(container);
       root.render(<AboutMe/>);
     }
+    else if(event.target.id == 'Projects'){
+      const container = document.getElementById('page');
+      container.innerHTML = '';
+      const root = ReactDOM.createRoot(container);
+      root.render(<Projects />);
+    }
   }
   return (
     <>
@@ -120,7 +131,7 @@ function App() {
         <div className = "diff">
           <p id='About-Me' className = "sec" onClick={pageRoute}>About Me</p>
           <p id='Experience' className = "sec" onClick={pageRoute}>Experience</p>
-          <p className = "sec">Personal Projects</p>
+          <p id='Projects' className = "sec" onClick={pageRoute}>Personal Projects</p>
           <p className = "sec">Art/Animations</p>
         </div>
       </div>
