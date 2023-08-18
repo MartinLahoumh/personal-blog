@@ -60,7 +60,7 @@
     transition: width 0.5s;
 }
 
-#projects{
+.projects{
     width: 82%;
     height: 82%;
     z-index: 2;

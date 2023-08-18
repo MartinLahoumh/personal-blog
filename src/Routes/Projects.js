@@ -42,22 +42,19 @@ function Projects() {
             cardContent['img'] = dk;
             cardContent['title'] = id;
             cardContent['video'] = dkVid;
-            cardContent['details'] = '<li>Used pygame to create an app of the first level of the Donkey Kong arcade game.</li><br/><li>Utilized python classes to handle objects such as the player and their abilities (jump physics, player movement, and hitboxes), the projectiles and their abilities (such as a barrel falling off each ledge with an appropriate speed and its hitbox), and the main enemy (Donkey Kong) which would be the source of instantiating projectiles.</li>';
+            cardContent['details'] = '<li><a href=\'https://github.com/MartinLahoumh/DonkeyKongArcade\'>Source Code</a></li><li>Used pygame to create an app of the first level of the Donkey Kong arcade game.</li><br/><li>Utilized python classes to handle objects such as the player and their abilities (jump physics, player movement, and hitboxes), the projectiles and their abilities (such as a barrel falling off each ledge with an appropriate speed and its hitbox), and the main enemy (Donkey Kong) which would be the source of instantiating projectiles.</li><li>Recreated all sprites and animations using Procreate.</li>';
         }
-        else if(id == 'Recycletek'){
+        else if(id == 'Spotify API'){
             cardContent['color'] = "#93ff8a";
-            cardContent['img'] = rec;
             cardContent['title'] = id;
-            cardContent['years'] = 'Jun,2023-Present';
-            cardContent['role'] = 'Full Stack Developer';
-            cardContent['details'] = '<li>Created a blog page for the company staff and public website so that employees can create and post their blog post to the public blog website: https://recycletek.co/blogs</li><li>Used React to incorporate components for things such as adding a post or displaying a post in the existing staff website and used flask to create multiple routes under the /blog blueprint to the existing interface server for posting and getting from the database.</li><li>•	Used SQLAlchemy to add blog posts to a database so that it can be edited and viewed when needed by the use of its id.</li><li>•	Created my own branch on teams GitHub page for the blog feature as to not disrupt the dev branch (before merge).</li>';
+            cardContent['video'] = spotifyVid;
+            cardContent['details'] = '<li><a href=\'https://github.com/MartinLahoumh/spotifyAPI\'>Source Code</a></li><li>Built an app that creates a playlist for a user’s Spotify account to which the user can add their own preferred songs to that playlist using Spotify’s API.</li><li>Utilized express and node.js to gain access to a user’s Spotify profile by going through Spotify’s OAuth 2.0 authentication to gain an access token.</li><li>Used a POST request to create the playlist that the user would create on the app. This would redirect them to a page to place songs on their playlist.</li><li>Sent a GET request to get the songs the user listed (with the most popular version of the song title being selected) and then would send a POST request for those songs to be added to the users newly created Spotify playlist.</li><li>Applied CSS grid and flex box to create an original design for the website by scratch with no frameworks</li>';
         }
         else if(id == "Calculator"){
             cardContent['color'] = '#ffff88';
-            cardContent['img'] = calc;
             cardContent['title'] = id;
             cardContent['video'] = calcVid;
-            cardContent['details'] = '<li>Worked on a research project with a team of 5 to discover the effects that boundary layer winds had on the spread of regional pollution.</li><li>Utilized python, Numpy, Pandas, and Matlib to analyze netCDF, csv, and xlsx files in order to calculate trends of wind data and shape of nitrogen dioxide plumes.</li><li>Translated mentors matlab code into python to add onto his code on my end and create graphs of the new data collected.</li><li>•	Applied social sciences into the data that was collected to form a scientific presentation to which I presented at CCNY.</li>';
+            cardContent['details'] = '<li><a href=\'https://github.com/MartinLahoumh/Calculator\'>Source Code</a></li><li>Worked on a Calculator with no tutorial what so ever in order to strengthen my HTML, CSS, and JavaScript skills.</li><li>Created a unique looking display using CSS grid and flexbox.</li><li>Practice use of multiple windows on a screen to test out responsiveness of a website.</li><li>Used Procreate to create all animations.</li>';
         }
         //setCardContent((prevData)=>({...prevData, ['details']:cardBody}));
         const container = document.getElementById('pop-up-section');

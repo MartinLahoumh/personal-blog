@@ -8,6 +8,9 @@ import Ravaged_Rustworks from './music/Ravaged_Rustworks.mp3';
 import Pikmin_Title_Screen from './music/Pikmin_Title_Screen.mp3';
 import Creative_Exercise from './music/Creative_Exercise.mp3';
 import Select_Area from './music/Select_Area_Selector_4.mp3';
+import City_Day from './music/City_Day.mp3';
+import Mini_Game from './music/Mini_Game.mp3';
+import Bouncy_Beanstalk_Walk from './music/Bouncy_Beanstalk_Walk.mp3';
 import { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 /*
@@ -23,10 +26,11 @@ function App() {
   let [play,setPlay] = useState(false);
   //let [musicList, setMusicList] = useState([Ravaged_Rustworks,Pikmin_Title_Screen]);
   let [musicList, setMusicList] = useState({
-    '0':[Ravaged_Rustworks, 'Ravaged Rustworks'],
-    '1': [Pikmin_Title_Screen, 'Pikmin Title Screen - Pikmin'],
-    '2': [Creative_Exercise, 'Creative Exercise - Mario Paint'],
-    '3': [Select_Area, 'Select Area (Sector 4)'],
+    '0':[Creative_Exercise, 'Creative Exercise - Mario Paint'],
+    '1': [Mini_Game, 'Mini Game - Yoshi\'s Crafted World'],
+    '2': [Bouncy_Beanstalk_Walk, 'Bouncy Beanstalk Walk - Yoshi\'s New Island'],
+    '3': [City_Day, 'City Day - Animal Crossing City Folk'],
+    '4': [Pikmin_Title_Screen, 'Pikmin Title Screen - Pikmin'],
   });
   let selectedSong = 0;
 
@@ -81,12 +85,9 @@ function App() {
     let second = 0;
     if(time >= 60){
       minute = Math.floor(time/60);
-      second = ((time - 60)%100) + Math.floor(time%10);
-      if(second > 9){
-        second = second + 10;
-      }
-      else{
-        second = "0" + second;
+      second = Math.floor(Math.abs((minute * 60) - time));
+      if(second <= 9){
+        second = "0" + Math.floor(second);
       }
     }
     else{
@@ -102,7 +103,28 @@ function App() {
   const audioTimeUpdate = ()=>{
     const audio = document.getElementById('audio');
     const time = document.getElementById('time');
-    time.innerHTML = secToMin(audio.currentTime) + "/" + secToMin(audio.duration);
+    time.innerHTML = secToMin(audio.currentTime) + "/" + secToMin(Math.floor(audio.duration));
+    audio.addEventListener("input", volumeLevel);
+    if(audio.currentTime == audio.duration){
+      if(selectedSong == Object.keys(musicList).length - 1){
+        selectedSong = 0;
+      }
+      else{
+        selectedSong += 1;
+      }
+      audio.src = musicList[selectedSong][0];
+      document.getElementById('song-name').innerText = musicList[selectedSong][1];
+      audio.currentTime = 0;
+      audio.pause();
+      audio.load();
+      audio.play();
+    }
+  }
+
+  const volumeLevel = ()=>{
+    const audio = document.getElementById('audio');
+    audio.volume = document.getElementById('volume-slider').value /100;
+    console.log("HERE");
   }
 
   const pageRoute = (event)=>{
@@ -110,7 +132,7 @@ function App() {
       const container = document.getElementById('page');
       container.innerHTML = '';
       const root = ReactDOM.createRoot(container);
-      root.render(<Home />);
+      root.render(<Home routeFunc={pageRoute} />);
     }
     else if(event.target.id == 'Experience'){
       const container = document.getElementById('page');
@@ -143,22 +165,22 @@ function App() {
         </div>
       </div>
       <div id='page'>
-        <Home />
+        <Home routeFunc={pageRoute} />
       </div>
       <div className='media-player-container'>
         <div className='media-player'> 
           <audio id='audio' src={musicList[selectedSong][0]} onTimeUpdate={audioTimeUpdate}>
           </audio>
-          <p id='song-name' className='song-name'>Ravaged Rustworks</p>
-          <button id='play-icon' className='play-icon' onClick={handlePlay}>Play</button>
+          <p id='song-name' className='song-name'>Creative Exercise - Mario Paint</p>
+          <button id='play-icon' className='play-icon song-btn' onClick={handlePlay}>Play</button>
           <div className='song-selection'>
-            <button id='prev-song' className='prev-song'onClick={handleSongSelection}>Prev</button>
-            <div id='time' className='time'>0:00/3:29</div>
-            <button id='next-song' className='next-song' onClick={handleSongSelection}>Next</button>
+            <button id='prev-song' className='prev-song song-btn'onClick={handleSongSelection}>Prev</button>
+            <div id='time' className='time'>0:00/1:59</div>
+            <button id='next-song' className='next-song song-btn' onClick={handleSongSelection}>Next</button>
           </div>
           <div className='volume-control'>
-            <button id='mute' className='mute'>Mute</button>
-            <input type='range' id='volume-slider' max='100' defaultValue='15' step='5'></input>
+            <button id='mute' className='mute song-btn' onClick={()=>{document.getElementById('audio').volume = 0; document.getElementById('volume-slider').value = 0;}}>Mute</button>
+            <input type='range' id='volume-slider' max='100' defaultValue='15' step='5' onClick={volumeLevel}></input>
           </div>
         </div>
       </div>

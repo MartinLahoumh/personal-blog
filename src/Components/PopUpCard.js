@@ -18,7 +18,7 @@ const PopUpCard = (props)=> {
                   <p className='pop-card-years'>{props.years}</p>
                 </div>
                 <div className='pop-details'>
-                  <ul dangerouslySetInnerHTML={{__html: props.details}}>
+                  <ul style={{fontSize: '100%', fontFamily:'Ubuntu', lineHeight: '25px'}} dangerouslySetInnerHTML={{__html: props.details}}>
                   </ul>
                 </div>
                 <button style={{backgroundColor: props.color}} className='click-info' onClick={props.clickFunction} id = {props.title}>Go Back.</button>

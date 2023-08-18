@@ -16,27 +16,27 @@ import green from '../images/green.png';
 import yellow from '../images/yellow.png';
 import '../styles/Home.css';
 
-function Home() {
+function Home(props) {
   return (
     <>
         <div className='body'>
         <img className='background' src={yoshi} />
         <div className='all-content'>
                 <div className='options'>
-                    <div className='icon'>
-                        <img className='icon-img'src={about_me} />
-                        <img className='icon-highlight' src={red} />
-                        <h2 className='section-name'>About Me.</h2>
+                    <div className='icon' id='About_Me' onClick={props.routeFunc}>
+                        <img className='icon-img'src={about_me} id='About_Me' onClick={props.routeFunc} />
+                        <img className='icon-highlight' src={red} id='About_Me' onClick={props.routeFunc}/>
+                        <h2 className='section-name' id='About_Me' onClick={props.routeFunc}>About Me.</h2>
                     </div>
-                    <div className='icon'>
-                        <img className='icon-highlight' src={green} />
-                        <img className='icon-img' src={experience} />
-                        <h2 className='section-name'>Experience.</h2>
+                    <div className='icon' id='Experience' onClick={props.routeFunc}>
+                        <img className='icon-highlight' id='Experience' src={green} onClick={props.routeFunc} />
+                        <img className='icon-img' id='Experience' src={experience} onClick={props.routeFunc} />
+                        <h2 className='section-name' id='Experience' onClick={props.routeFunc} >Experience.</h2>
                     </div>
-                    <div className='icon'>
-                        <img className='icon-highlight' src={yellow} />
-                        <img id = 'projects' src={projects} />
-                        <h2 className='section-name'>Projects.</h2>
+                    <div className='icon' id='Projects' onClick={props.routeFunc}>
+                        <img className='icon-highlight' src={yellow} id='Projects' onClick={props.routeFunc}/>
+                        <img src={projects} className='projects' id='Projects' onClick={props.routeFunc}/>
+                        <h2 className='section-name' id='Projects' onClick={props.routeFunc}>Projects.</h2>
                     </div>
                     <div className='icon'>
                         <img className='icon-highlight' src={blue} />
