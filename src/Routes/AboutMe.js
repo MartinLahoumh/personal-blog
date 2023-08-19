@@ -14,7 +14,6 @@ import Resume from '../Resources/Martin_Lahoumh_Resume.pdf';
 function AboutMe() {
   return (
     <>
-        <Router>
         <div className='body'>
             <img className='background' src={yoshi} />
             <div className='content'>
@@ -60,11 +59,7 @@ function AboutMe() {
                     <p className='message'>&emsp;&emsp;&emsp;Newgrounds grew my interest in software development due to the vast amount of passion people had creating their own games simply off making people happy. Additionally, Nintendo also played a big part in my love of creating, seeing the passion that late president of Nintendo, Satoru Iwata, had when it came to developing games inspired me further to create my own games. In 2019, I got my official formal coding experience at All Star Code, a summer intensive program that teaches young boys how to… well code… From there, I would teach myself Unity 2D/3D along with C# to create small games that I personally would find cool. In 2022, I would get my first coding experience in the professional world by being a data science intern at NOAA-CESSERST. In 2023 I would find my passion for web and app development and use what I have learned in my first software engineering job at Recycletek as a Full Stack Developer, where I currently work (And I must say it has been a blast so far). To this day, I am a big avid fan of video games and cartoons and enjoy creating them whenever I have time to spare. </p>
                 </div>
             </div>
-            <Routes>
-                <Route exact path ="/Resume" element = {Resume}></Route>
-            </Routes>
         </div>
-        </Router>
     </>
   );
 }
