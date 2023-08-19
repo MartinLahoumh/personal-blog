@@ -85,6 +85,7 @@
 
 .play-icon, .prev-song, .next-song, .mute{
   border-style: solid;
+  border-color: black;
   width: 7%;
   border-width: 3px;
   font-family: Ubuntu;

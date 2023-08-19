@@ -69,9 +69,9 @@ function Experience() {
             <div id='pop-up-section'className='pop-up-section'></div>
                 <img className='heading' src={experience} />
                 <div className='card-section'>
-                    <Card className='card' id='1' color='#ff908a' width='100%'height='32vh' img={ctp} title='Cuny Tech Prep' years = 'Aug,2023 - Present' role = 'Full Stack Student' clickFunction={clickFunction}/>
-                    <Card className='card' id='2' color='#93ff8a' width='100%' height='32vh' img={rec} title='Recycletek' years = 'Jun,2023 - Present' role = 'Full Stack Developer' clickFunction={clickFunction}/>
-                    <Card className='card' id='3' color='#ffff88' width='100%' height='32vh' img={noaa} title='NOAA-CESSRST' years = 'Jun,2022 - Aug,2022' role = 'Data Science Intern' clickFunction={clickFunction}/>
+                    <Card className='card' id='1' color='#ff908a' width='100%'height='35vh' img={ctp} title='Cuny Tech Prep' years = 'Aug,2023 - Present' role = 'Full Stack Student' clickFunction={clickFunction}/>
+                    <Card className='card' id='2' color='#93ff8a' width='100%' height='35vh' img={rec} title='Recycletek' years = 'Jun,2023 - Present' role = 'Full Stack Developer' clickFunction={clickFunction}/>
+                    <Card className='card' id='3' color='#ffff88' width='100%' height='35vh' img={noaa} title='NOAA-CESSRST' years = 'Jun,2022 - Aug,2022' role = 'Data Science Intern' clickFunction={clickFunction}/>
                 </div>
                 
                 
