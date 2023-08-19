@@ -69,9 +69,9 @@ function Projects() {
             <div className='content'>
                 <img style={{width:'33%'}}className='heading' src={projects} />
                 <div className='card-section'>
-                    <Card className='card' id='1' color='#ff908a' height='30vh' img={dk} title='Donkey Kong' years = 'Feb,2023 - Mar,2023' role = 'Game Development' clickFunction={clickFunction}/>
-                    <Card className='card' id='2' color='#93ff8a' height='30vh' img={spotify} title='Spotify API' years = 'Dec,2022 - Jan,2023' role = 'Full Stack Development' clickFunction={clickFunction}/>
-                    <Card className='card' id='3' color='#ffff88' height='30vh' img={calc} title='Calculator' years = 'Dec,2022 - Dec,2022' role = 'Full Stack Development' clickFunction={clickFunction}/>
+                    <Card className='card' id='1' color='#ff908a' height='35vh' img={dk} title='Donkey Kong' years = 'Feb,2023 - Mar,2023' role = 'Game Development' clickFunction={clickFunction}/>
+                    <Card className='card' id='2' color='#93ff8a' height='35vh' img={spotify} title='Spotify API' years = 'Dec,2022 - Jan,2023' role = 'Full Stack Development' clickFunction={clickFunction}/>
+                    <Card className='card' id='3' color='#ffff88' height='35vh' img={calc} title='Calculator' years = 'Dec,2022 - Dec,2022' role = 'Full Stack Development' clickFunction={clickFunction}/>
                 </div>
                 <div id='pop-up-section'className='pop-up-section'>
                    
