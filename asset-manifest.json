@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal-blog/static/css/main.e28fbcc6.css",
-    "main.js": "/personal-blog/static/js/main.b0dfa0bb.js",
+    "main.js": "/personal-blog/static/js/main.a1198735.js",
     "static/js/787.dfb08324.chunk.js": "/personal-blog/static/js/787.dfb08324.chunk.js",
     "static/media/calc.mp4": "/personal-blog/static/media/calc.5d1becbda516435b7225.mp4",
     "static/media/dk.mp4": "/personal-blog/static/media/dk.bc709fbb7fa981e6706d.mp4",
@@ -53,11 +53,11 @@
     "static/media/Hourglassdog1.webp": "/personal-blog/static/media/Hourglassdog1.9775d600e3179d1687cc.webp",
     "index.html": "/personal-blog/index.html",
     "main.e28fbcc6.css.map": "/personal-blog/static/css/main.e28fbcc6.css.map",
-    "main.b0dfa0bb.js.map": "/personal-blog/static/js/main.b0dfa0bb.js.map",
+    "main.a1198735.js.map": "/personal-blog/static/js/main.a1198735.js.map",
     "787.dfb08324.chunk.js.map": "/personal-blog/static/js/787.dfb08324.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e28fbcc6.css",
-    "static/js/main.b0dfa0bb.js"
+    "static/js/main.a1198735.js"
   ]
 }
