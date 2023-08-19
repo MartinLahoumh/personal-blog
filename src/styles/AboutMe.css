@@ -1,5 +1,10 @@
+@font-face{
+    font-family: 'Ubuntu';
+    src: url('../fonts/static/Ubuntu-Medium.ttf');
+}
+
 #heading-about-me{
-    width:42%;
+    width:38%;
     margin-bottom: 25px;
 }
 
@@ -15,6 +20,7 @@
     margin-bottom: 25px;
     font-family: Ubuntu;
     font-size: 120%;
+    font-weight: 600;
 }
 
 .martin{
@@ -85,6 +91,7 @@
     margin: 0;
     font-family: Ubuntu;
     font-size: 120%;
+    font-weight: 600;
 }
 
 .message-container{
@@ -97,6 +104,7 @@
     font-family: Ubuntu;
     font-size: 120%;
     line-height: 25px;
+    font-weight: 600;
 }
 .rotate {
     animation: rotation 2s;

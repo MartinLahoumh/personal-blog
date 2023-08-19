@@ -58,7 +58,7 @@ function Experience() {
         //setCardContent((prevData)=>({...prevData, ['details']:cardBody}));
         const container = document.getElementById('pop-up-section');
         const root = ReactDOM.createRoot(container);
-        root.render(<PopUpCard width='80%' height='80vh' color={cardContent['color']} img={cardContent['img']} title={cardContent['title']} role={cardContent['role']} years={cardContent['years']} details={cardContent['details']} clickFunction={goBackClick}/>);
+        root.render(<PopUpCard width='80%' height='65vh' color={cardContent['color']} img={cardContent['img']} title={cardContent['title']} role={cardContent['role']} years={cardContent['years']} details={cardContent['details']} clickFunction={goBackClick}/>);
         //document.getElementById('pop-up-section').append(<PopUpCard width='80%' height='80vh' color={cardContent['color']} img={cardContent['img']} title={cardContent['title']} role={cardContent['role']} years={cardContent['years']} details={cardContent['details']}/>);
     }
   return (
@@ -66,13 +66,14 @@ function Experience() {
         <div className='body'>
             <img className='background' src={yoshi} />
             <div className='content'>
+            <div id='pop-up-section'className='pop-up-section'></div>
                 <img className='heading' src={experience} />
                 <div className='card-section'>
-                    <Card className='card' id='1' color='#ff908a' height='40vh' img={ctp} title='Cuny Tech Prep' years = 'Aug,2023 - Present' role = 'Full Stack Student' clickFunction={clickFunction}/>
-                    <Card className='card' id='2' color='#93ff8a' height='40vh' img={rec} title='Recycletek' years = 'Jun,2023 - Present' role = 'Full Stack Developer' clickFunction={clickFunction}/>
-                    <Card className='card' id='3' color='#ffff88' height='40vh' img={noaa} title='NOAA-CESSRST' years = 'Jun,2022 - Aug,2022' role = 'Data Science Intern' clickFunction={clickFunction}/>
+                    <Card className='card' id='1' color='#ff908a' width='100%'height='30vh' img={ctp} title='Cuny Tech Prep' years = 'Aug,2023 - Present' role = 'Full Stack Student' clickFunction={clickFunction}/>
+                    <Card className='card' id='2' color='#93ff8a' width='100%' height='30vh' img={rec} title='Recycletek' years = 'Jun,2023 - Present' role = 'Full Stack Developer' clickFunction={clickFunction}/>
+                    <Card className='card' id='3' color='#ffff88' width='100%' height='30vh' img={noaa} title='NOAA-CESSRST' years = 'Jun,2022 - Aug,2022' role = 'Data Science Intern' clickFunction={clickFunction}/>
                 </div>
-                <div id='pop-up-section'className='pop-up-section'></div>
+                
                 
             </div>
         </div>

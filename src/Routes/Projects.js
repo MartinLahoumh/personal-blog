@@ -59,7 +59,7 @@ function Projects() {
         //setCardContent((prevData)=>({...prevData, ['details']:cardBody}));
         const container = document.getElementById('pop-up-section');
         const root = ReactDOM.createRoot(container);
-        root.render(<ProjPopUpCard width='80%' height='80vh' color={cardContent['color']} img={cardContent['img']} video={cardContent['video']} title={cardContent['title']} role={cardContent['role']} years={cardContent['years']} details={cardContent['details']} clickFunction={goBackClick}/>);
+        root.render(<ProjPopUpCard width='80%' height='70vh' color={cardContent['color']} img={cardContent['img']} video={cardContent['video']} title={cardContent['title']} role={cardContent['role']} years={cardContent['years']} details={cardContent['details']} clickFunction={goBackClick}/>);
         //document.getElementById('pop-up-section').append(<PopUpCard width='80%' height='80vh' color={cardContent['color']} img={cardContent['img']} title={cardContent['title']} role={cardContent['role']} years={cardContent['years']} details={cardContent['details']}/>);
     }
   return (
@@ -67,11 +67,11 @@ function Projects() {
         <div className='body'>
             <img className='background' src={yoshi} />
             <div className='content'>
-                <img className='heading' src={projects} />
+                <img style={{width:'33%'}}className='heading' src={projects} />
                 <div className='card-section'>
-                    <Card className='card' id='1' color='#ff908a' height='40vh' img={dk} title='Donkey Kong' years = 'Feb,2023 - Mar,2023' role = 'Game Development' clickFunction={clickFunction}/>
-                    <Card className='card' id='2' color='#93ff8a' height='40vh' img={spotify} title='Spotify API' years = 'Dec,2022 - Jan,2023' role = 'Full Stack Development' clickFunction={clickFunction}/>
-                    <Card className='card' id='3' color='#ffff88' height='40vh' img={calc} title='Calculator' years = 'Dec,2022 - Dec,2022' role = 'Full Stack Development' clickFunction={clickFunction}/>
+                    <Card className='card' id='1' color='#ff908a' height='30vh' img={dk} title='Donkey Kong' years = 'Feb,2023 - Mar,2023' role = 'Game Development' clickFunction={clickFunction}/>
+                    <Card className='card' id='2' color='#93ff8a' height='30vh' img={spotify} title='Spotify API' years = 'Dec,2022 - Jan,2023' role = 'Full Stack Development' clickFunction={clickFunction}/>
+                    <Card className='card' id='3' color='#ffff88' height='30vh' img={calc} title='Calculator' years = 'Dec,2022 - Dec,2022' role = 'Full Stack Development' clickFunction={clickFunction}/>
                 </div>
                 <div id='pop-up-section'className='pop-up-section'>
                    
