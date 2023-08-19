@@ -23,10 +23,10 @@ function Home(props) {
         <img className='background' src={yoshi} />
         <div className='all-content'>
                 <div className='options'>
-                    <div className='icon' id='About_Me' onClick={props.routeFunc}>
-                        <img className='icon-img'src={about_me} id='About_Me' onClick={props.routeFunc} />
-                        <img className='icon-highlight' src={red} id='About_Me' onClick={props.routeFunc}/>
-                        <h2 className='section-name' id='About_Me' onClick={props.routeFunc}>About Me.</h2>
+                    <div className='icon' id='About-Me' onClick={props.routeFunc}>
+                        <img className='icon-img'src={about_me} id='About-Me' onClick={props.routeFunc} />
+                        <img className='icon-highlight' src={red} id='About-Me' onClick={props.routeFunc}/>
+                        <h2 className='section-name' id='About-Me' onClick={props.routeFunc}>About Me.</h2>
                     </div>
                     <div className='icon' id='Experience' onClick={props.routeFunc}>
                         <img className='icon-highlight' id='Experience' src={green} onClick={props.routeFunc} />
