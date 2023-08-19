@@ -11,12 +11,6 @@ import ccny from '../images/ccny.jpg';
 import rec from '../images/Recycletek.png';
 import dog from '../images/Hourglassdog1.webp';
 import Resume from '../Resources/Martin_Lahoumh_Resume.pdf';
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-    Link
-  } from 'react-router-dom';
 function AboutMe() {
   return (
     <>
