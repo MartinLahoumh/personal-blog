@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal-blog/static/css/main.96133810.css",
-    "main.js": "/personal-blog/static/js/main.e6eb758b.js",
+    "main.css": "/personal-blog/static/css/main.ba4101da.css",
+    "main.js": "/personal-blog/static/js/main.6e85c104.js",
     "static/js/787.dfb08324.chunk.js": "/personal-blog/static/js/787.dfb08324.chunk.js",
     "static/media/calc.mp4": "/personal-blog/static/media/calc.5d1becbda516435b7225.mp4",
     "static/media/dk.mp4": "/personal-blog/static/media/dk.bc709fbb7fa981e6706d.mp4",
@@ -52,12 +52,12 @@
     "static/media/yellow.png": "/personal-blog/static/media/yellow.2e77b410cd03cccd300f.png",
     "static/media/Hourglassdog1.webp": "/personal-blog/static/media/Hourglassdog1.9775d600e3179d1687cc.webp",
     "index.html": "/personal-blog/index.html",
-    "main.96133810.css.map": "/personal-blog/static/css/main.96133810.css.map",
-    "main.e6eb758b.js.map": "/personal-blog/static/js/main.e6eb758b.js.map",
+    "main.ba4101da.css.map": "/personal-blog/static/css/main.ba4101da.css.map",
+    "main.6e85c104.js.map": "/personal-blog/static/js/main.6e85c104.js.map",
     "787.dfb08324.chunk.js.map": "/personal-blog/static/js/787.dfb08324.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.96133810.css",
-    "static/js/main.e6eb758b.js"
+    "static/css/main.ba4101da.css",
+    "static/js/main.6e85c104.js"
   ]
 }
