@@ -19,7 +19,6 @@ function AboutMe() {
             <div className='content'>
                 <img className='heading' id='heading-about-me' src={about_me}/>
                 <div className='contact-content'>
-                        <p className='contact-info'>+1(347)-569-9520</p>
                         <p className='contact-info' style={{marginLeft:'5px', marginRight:'5px'}}>&bull;</p>
                         <p className='contact-info'>Brooklyn,NY</p>
                         <p className='contact-info' style={{marginLeft:'5px', marginRight:'5px'}}>&bull;</p>
