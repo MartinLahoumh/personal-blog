@@ -38,11 +38,6 @@ function Home(props) {
                         <img src={projects} className='projects' id='Projects' onClick={props.routeFunc}/>
                         <h2 className='section-name' id='Projects' onClick={props.routeFunc}>Projects.</h2>
                     </div>
-                    <div className='icon'>
-                        <img className='icon-highlight' src={blue} />
-                        <img className='icon-img' src={art_animations} />
-                        <h2 className='section-name'>Art/Animations.</h2>
-                    </div>
                 </div>
                 <div className='welcome-message'>
                     <img className='welcome' src={welcome} />

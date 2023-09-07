@@ -161,7 +161,6 @@ function App() {
           <p id='About-Me' className = "sec" onClick={pageRoute}>About Me</p>
           <p id='Experience' className = "sec" onClick={pageRoute}>Experience</p>
           <p id='Projects' className = "sec" onClick={pageRoute}>Personal Projects</p>
-          <p className = "sec">Art/Animations</p>
         </div>
       </div>
       <div id='page'>
