@@ -37,7 +37,7 @@ function Experience() {
             cardContent['title'] = id;
             cardContent['years'] = 'Aug,2023-Present';
             cardContent['role'] = 'Full Stack Student';
-            cardContent['details'] = '<li>Info Coming Soon :)</li>';
+            cardContent['details'] = '<li>Collaborated in a team of 4 in a 1 week hackathon centered around the arts</li><li>Was in charge of the back-end of the project, using Flask for the back-end server and SQLAlchemy for the database</li><li>Built an application that allows users to buy and sell art pieces</li><li><a href=\'https://github.com/MartinLahoumh/shopping_center\'>Source Code</a></li>';
         }
         else if(id == 'Recycletek'){
             cardContent['color'] = "#93ff8a";
