@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal-blog/static/css/main.e28fbcc6.css",
-    "main.js": "/personal-blog/static/js/main.c5c2f5db.js",
+    "main.js": "/personal-blog/static/js/main.02e9778f.js",
     "static/js/787.dfb08324.chunk.js": "/personal-blog/static/js/787.dfb08324.chunk.js",
     "static/media/calc.mp4": "/personal-blog/static/media/calc.5d1becbda516435b7225.mp4",
     "static/media/dk.mp4": "/personal-blog/static/media/dk.bc709fbb7fa981e6706d.mp4",
@@ -16,12 +16,12 @@
     "static/media/dk1.png": "/personal-blog/static/media/dk1.99fba652734d71896490.png",
     "static/media/dk2.png": "/personal-blog/static/media/dk2.00df520e713851e96c84.png",
     "static/media/flower.webp": "/personal-blog/static/media/flower.5a1e3e7dc2140a2c8f7b.webp",
-    "static/media/martin.JPG": "/personal-blog/static/media/martin.6ae44d9cb89217e4f440.JPG",
     "static/media/Monkey.gif": "/personal-blog/static/media/Monkey.1754785bb81fbc689181.gif",
     "static/media/experience.png": "/personal-blog/static/media/experience.8344ccbd76a0bf812ed4.png",
     "static/media/Ubuntu-Medium.ttf": "/personal-blog/static/media/Ubuntu-Medium.e37c5546eb1a6efc4818.ttf",
     "static/media/greeting.png": "/personal-blog/static/media/greeting.b9079b579f179ead6e1a.png",
     "static/media/resume.png": "/personal-blog/static/media/resume.2ae7ffefadf4a06f0d1d.png",
+    "static/media/martin.JPG": "/personal-blog/static/media/martin.2298248d62414f887768.JPG",
     "static/media/art-animations.png": "/personal-blog/static/media/art-animations.5fd862055f3fa315eb89.png",
     "static/media/projects.png": "/personal-blog/static/media/projects.ca61120327abdf792778.png",
     "static/media/about-me.png": "/personal-blog/static/media/about-me.2a21f8466c02ff18830e.png",
@@ -53,11 +53,11 @@
     "static/media/Hourglassdog1.webp": "/personal-blog/static/media/Hourglassdog1.9775d600e3179d1687cc.webp",
     "index.html": "/personal-blog/index.html",
     "main.e28fbcc6.css.map": "/personal-blog/static/css/main.e28fbcc6.css.map",
-    "main.c5c2f5db.js.map": "/personal-blog/static/js/main.c5c2f5db.js.map",
+    "main.02e9778f.js.map": "/personal-blog/static/js/main.02e9778f.js.map",
     "787.dfb08324.chunk.js.map": "/personal-blog/static/js/787.dfb08324.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e28fbcc6.css",
-    "static/js/main.c5c2f5db.js"
+    "static/js/main.02e9778f.js"
   ]
 }
